@@ -13,10 +13,12 @@ const styles = {
   imageStyle: {
     boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
   },
+  
   cards: {
     background: "transparent",
     boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
   },
+
   link: {
       color: "rgb(84, 81, 63)"
   }
