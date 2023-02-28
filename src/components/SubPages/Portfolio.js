@@ -3,13 +3,11 @@ import PortfolioCardGroup from "../PortfolioInfo";
 
 // TODO: style
 
-const Portfolio = () => {
+export default function Portfolio() {
       return (
-            <div className="content">
-                  <h2>Portfolio</h2>
-                  <PortfolioCardGroup />
-            </div>
-      )
+        <div className="content">
+          <h2>Portfolio</h2>
+          <PortfolioCardGroup />
+        </div>
+      );
 }
-
-export default Portfolio

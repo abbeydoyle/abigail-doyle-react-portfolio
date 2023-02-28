@@ -8,6 +8,6 @@ import placeholder from "../../assets/placeholder.png"
 
 export default function About() {
       return (
-            <div>About Me</div>
+            <div>This will be an About Me page</div>
       )
 }

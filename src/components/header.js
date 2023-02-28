@@ -12,7 +12,7 @@ const styles = {
 
 const Header = ({ currentPage, handlePageChange }) => {
       return (
-            <Navbar expand="sm" style={styles.heading}>
+            <Navbar expand="sm">
                   <Navbar.Brand>
                         Abigail Doyle
                   </Navbar.Brand>

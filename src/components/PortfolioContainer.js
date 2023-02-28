@@ -5,6 +5,7 @@ import About from "./SubPages/About";
 import Contact from "./SubPages/Contact";
 import Portfolio from "./SubPages/Portfolio";
 import Resume from "./SubPages/Resume";
+import placeholder from "../assets/placeholder.png";
 
 // TODO: styles
 
@@ -31,7 +32,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div style={styles.card}>
+    <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
