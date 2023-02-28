@@ -6,14 +6,20 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CardGroup from "react-bootstrap/CardGroup";
+import "../../app.css";
 
 // TODO: styling
 const styles = {
-  imageStyle: {},
-  cardContainer: {
-    display: "flex",
-    justifyContent: "center",
+  imageStyle: {
+    boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
   },
+  cards: {
+    background: "transparent",
+    boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
+  },
+  link: {
+      color: "rgb(84, 81, 63)"
+  }
 };
 
 // TODO: finish
@@ -29,7 +35,7 @@ export default function About() {
         rounded
       />
       <h2>Abigail Doyle</h2>
-      <Card>
+      <Card style={styles.cards}>
         <Card.Body>
           <Card.Title>About Me</Card.Title>
           <Card.Text>
@@ -62,7 +68,7 @@ export default function About() {
           <CardGroup>
             <Row xs={1} md={2} lg={2} style={styles.cardContainer}>
               <Col className="mb-3">
-                <Card>
+                <Card style={styles.cards}>
                   <Card.Body>
                     <Card.Title>Violin</Card.Title>
                     <Card.Text>
@@ -80,7 +86,7 @@ export default function About() {
                 </Card>
               </Col>
               <Col className="mb-3">
-                <Card>
+                <Card style={styles.cards}>
                   <Card.Body>
                     <Card.Title>Reading</Card.Title>
                     <Card.Text>
@@ -95,7 +101,7 @@ export default function About() {
                 </Card>
               </Col>
               <Col className="mb-3">
-                <Card>
+                <Card style={styles.cards}>
                   <Card.Body>
                     <Card.Title>Running</Card.Title>
                     <Card.Text>
@@ -111,7 +117,7 @@ export default function About() {
                 </Card>
               </Col>
               <Col className="mb-3">
-                <Card>
+                <Card style={styles.cards}>
                   <Card.Body>
                     <Card.Title>Duna</Card.Title>
                     <Card.Text>
@@ -140,7 +146,7 @@ export default function About() {
           <CardGroup>
             <Row xs={1} md={2} lg={2} style={styles.cardContainer}>
               <Col className="mb-3">
-                <Card>
+                <Card style={styles.cards}>
                   <Card.Body>
                     <Card.Title>Digital Crisis Counselor</Card.Title>
                     <Card.Text>
@@ -178,14 +184,12 @@ export default function About() {
                       allows me to instill empathy and teach coping strategies
                       for self-reliance. As Dr. Wayne Dyer said, “If you change
                       the way you look at things, the things you look at
-                      change.” By volunteering for the Trevor Project, I hope
-                      that the youth I talk to accept themselves as who they are
-                      and, through this, the world also accepts them. Donations
-                      can be made 
+                      change.” Donations can be made <></>
                       <Card.Link
                         href="https://give.thetrevorproject.org/give/63307/#!/donation/checkout"
                         target="_blank"
                         rel="noreferrer"
+                        style = {styles.link}
                       >
                         here
                       </Card.Link>
@@ -195,7 +199,7 @@ export default function About() {
                 </Card>
               </Col>
               <Col className="mb-3">
-                <Card>
+                <Card style={styles.cards}>
                   <Card.Body>
                     <Card.Title>Gardener</Card.Title>
                     <Card.Text>
@@ -238,7 +242,7 @@ export default function About() {
                 </Card>
               </Col>
               <Col className="mb-3">
-                <Card>
+                <Card style={styles.cards}>
                   <Card.Body>
                     <Card.Title>Seamstress</Card.Title>
                     <Card.Text>
@@ -266,7 +270,7 @@ export default function About() {
                 </Card>
               </Col>
               <Col className="mb-3">
-                <Card>
+                <Card style={styles.cards}>
                   <Card.Body>
                     <Card.Title>Dog Trainer & Adoption Specialist</Card.Title>
                     <Card.Text>
