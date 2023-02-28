@@ -1,28 +1,45 @@
 import React from "react";
-// TODO: images
-import placeholder from "../assets/placeholder.png";
-// TODO: styles
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import github from "../assets/github.png";
+import linkedin from "../assets/linkedin.png";
+import stackoverflow from "../assets/stackoverflow.png";
 
-const styles = {
-
-};
-
-// TODO: check links
-// TODO: third party app
+const styles = {};
 
 export default function Footer() {
   return (
-            <div>
-              <div>
-                <a href="https://github.com/abbeydoyle" target="_blank" rel="noreferrer">
-                  <img src={placeholder} alt="GitHub Logo" height="50px" />
-                </a>
-              </div>
-              <div>
-                <a href="https://www.linkedin.com/in/abbeydoyle/" target="_blank" rel="noreferrer">
-                  <img src={placeholder} alt="LinkedIn Logo" height="50px" />
-                </a>
-              </div>
-          </div>
-  )
+    <div className="content d-flex justify-content-evenly">
+      <Row xs={1} md={3} lg={3}>
+        <Col>
+          <a
+            href="https://github.com/abbeydoyle"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-auto"
+          >
+            <img src={github} alt="GitHub Logo" height="35px" />
+          </a>
+        </Col>
+        <Col>
+          <a
+            href="https://www.linkedin.com/in/abigaildoyle3"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedin} alt="LinkedIn Logo" height="35px" />
+          </a>
+        </Col>
+        <Col>
+          <a
+            href="https://stackoverflow.com/users/21307470/abbeydoyle"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={stackoverflow} alt="Stack Overflow Logo" height="35px" />
+          </a>
+        </Col>
+      </Row>
+    </div>
+  );
 }
