@@ -7,12 +7,21 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 // TODO: styles
 
 const styles = {
-
+      // header: {
+      //       background: "rgb(84, 81, 63)"
+      // }
+      border: {
+            marginTop: "1rem",
+            marginBottom: "1rem",
+            border: "0",
+            borderTop: "1px solid rgb(54, 52, 40)",
+      }
 };
 
 const Header = ({ currentPage, handlePageChange }) => {
       return (
-            <Navbar expand="sm">
+            <div>
+            <Navbar expand="sm" style={styles.header}>
                   <Navbar.Brand>
                         Abigail Doyle
                   </Navbar.Brand>
@@ -34,6 +43,8 @@ const Header = ({ currentPage, handlePageChange }) => {
                         </Nav>
                   </Navbar.Collapse>
           </Navbar>
+          <hr style = {styles.border}/>
+          </div>
       )
 }
 

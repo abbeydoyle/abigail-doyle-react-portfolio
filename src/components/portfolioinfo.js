@@ -3,12 +3,12 @@ import PortfolioCard from "./PortfolioCard";
 import CardGroup from "react-bootstrap/CardGroup";
 
 // TODO: add real images
-import card1Image from "../assets/placeholder.png";
-import card2Image from "../assets/placeholder.png";
-import card3Image from "../assets/placeholder.png";
-import card4Image from "../assets/placeholder.png";
-import card5Image from "../assets/placeholder.png";
-import card6Image from "../assets/placeholder.png";
+import card1Image from "../assets/plant.png";
+import card2Image from "../assets/drivein.png";
+import card3Image from "../assets/team.png";
+import card4Image from "../assets/markdown.png";
+import card5Image from "../assets/employee.png";
+import card6Image from "../assets/portfolio.png";
 
 const PortfolioInfo = [
       {

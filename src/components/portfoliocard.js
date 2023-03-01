@@ -16,11 +16,12 @@ const styles = {
             height: "100%",
             background: "transparent",
             boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
+            borderRadius: "0.5rem"
       },
 
       cardImage: {
             boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
-            height: "10rem"
+            height: "15rem"
       },
 
       link: {
@@ -28,8 +29,8 @@ const styles = {
       },
 
       cardBody: {
-            background: "rgb(168, 177, 150)"
-      }
+            background: "rgb(168, 177, 150)",
+      },
 
 }
 
