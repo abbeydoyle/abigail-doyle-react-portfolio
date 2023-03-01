@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CardGroup from "react-bootstrap/CardGroup";
 import "../../app.css";
+import CV from "../../assets/CV.pdf"
 
 const styles = {
   cards: {
@@ -24,12 +25,28 @@ const styles = {
 export default function Resume() {
   return (
     <div>
-      <h2 className="mb-2">Resume</h2>
+      <h2 className="mb-2"><a href={CV} style={styles.link} download>Downloadable Resume</a></h2>
       <Card style={styles.cards}>
         <Card.Body>
           <Card.Title>Personal Profile</Card.Title>
           <Card.Text>
           Inquisitive software engineer with a background in chemical and environmental engineering. Past experience in automation engineering as a software programmer provided inspiration to pursue a Professional Certificate in Full Stack Development. Experience leading research laboratories and interdepartmental project teams awarded leadership, time management, conflict resolution, and collaborative skills. Member of Tau Beta Pi. Currently looking for a return to software programming and design systems.
+          </Card.Text>
+          <Card.Subtitle className="mb-2"> Software Proficiencies</Card.Subtitle>
+          <Card.Text>
+          HTML, CSS, JS, Bootstrap, Tailwind, JQuery, JSON, AJAX
+          </Card.Text>
+          <Card.Text>
+          APIs, Node, ES6, Express, Jest, Handlebars, MySQL, Sequelize, Agile Development
+          </Card.Text>
+          <Card.Text>
+          React, NoSQL, MERN Stack
+          </Card.Text>
+          <Card.Text>
+          MATLAB, Excel VBA, Python, ChemCAD, LabVIEW, C++
+          </Card.Text>
+          <Card.Text>
+          The DOM, OOP, MVC Paradigm, Progressive Web Apps
           </Card.Text>
         </Card.Body>
       </Card>
