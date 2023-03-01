@@ -1,15 +1,9 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-// TODO: styles
+import logo from "../assets/logo.png"
 
 const styles = {
-      // header: {
-      //       background: "rgb(84, 81, 63)"
-      // }
       border: {
             marginTop: "1rem",
             marginBottom: "1rem",
@@ -21,8 +15,15 @@ const styles = {
 const Header = ({ currentPage, handlePageChange }) => {
       return (
             <div>
-            <Navbar expand="sm" style={styles.header}>
+            <Navbar expand="sm">
                   <Navbar.Brand>
+                  <img
+              alt="logo"
+              src={logo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
                         Abigail Doyle
                   </Navbar.Brand>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
