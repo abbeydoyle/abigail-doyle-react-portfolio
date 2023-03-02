@@ -1,3 +1,4 @@
+// dependencies
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -5,14 +6,8 @@ import About from "./SubPages/About";
 import Contact from "./SubPages/Contact";
 import Portfolio from "./SubPages/Portfolio";
 import Resume from "./SubPages/Resume";
-import placeholder from "../assets/placeholder.png";
 
-// TODO: styles
-
-const styles = {
-
-};
-
+// main page render, react use state for handling page change
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
 

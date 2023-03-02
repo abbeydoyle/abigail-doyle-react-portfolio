@@ -1,3 +1,4 @@
+// dependencies
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
@@ -8,7 +9,7 @@ import Col from "react-bootstrap/Col";
 import CardGroup from "react-bootstrap/CardGroup";
 import "../../app.css";
 
-// TODO: styling
+// faux css styling
 const styles = {
   imageStyle: {
     boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
@@ -24,8 +25,8 @@ const styles = {
   }
 };
 
-// TODO: finish
-
+// export abput me page
+// styled with bootstrap cards
 export default function About() {
   return (
     <div>

@@ -1,3 +1,4 @@
+// dependencies
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -5,8 +6,7 @@ import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 import stackoverflow from "../assets/stackoverflow.png";
 
-const styles = {};
-
+// export linkable footer
 export default function Footer() {
   return (
     <div className="content d-flex justify-content-evenly">

@@ -1,8 +1,10 @@
+// dependencies
 import React from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from "../assets/logo.png"
 
+// faux css
 const styles = {
       border: {
             marginTop: "1rem",
@@ -12,6 +14,7 @@ const styles = {
       }
 };
 
+// navbar header
 const Header = ({ currentPage, handlePageChange }) => {
       return (
             <div>

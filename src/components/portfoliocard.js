@@ -1,9 +1,10 @@
+// dependencies
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-// TODO: styles
+// styling
 const styles = {
       cardContainer: {
             display: "flex",
@@ -34,6 +35,7 @@ const styles = {
 
 }
 
+// portfolio card loop
 function PortfolioCard(props) {
       return (
             <Row xs={1} md={2} lg={3} style={styles.cardContainer}>

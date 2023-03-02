@@ -1,14 +1,14 @@
-
+// dependencies
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import '../../app.css';
 import React, { useState } from 'react';
 
-// Here we import a helper function that will check if the email is valid
+// import a helper function that will check if the email is valid
 import { validateEmail } from '../../utils/helpers';
 
-
+// faux css styling
 const styles = {
   formbox: {
     background: "rgba(0, 0, 0, 0.2)",
@@ -31,14 +31,17 @@ const styles = {
     height: "100px"
   }
 }
-
+// export contact form page with validations
+// styled with bootstrap form
 export default function Contact() {
 
+  // react use state
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
+  // handler for input state change
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
@@ -88,7 +91,7 @@ export default function Contact() {
 
 
 
-
+  // page build
   return (
     <div>
     <h3 className="mb-5">Please reach out to me via the form below:</h3>
@@ -143,8 +146,6 @@ export default function Contact() {
           <Button type="button" onClick={handleFormSubmit} variant="outline-dark">Submit</Button>
         </Form>
       </div>
-
-
 
   )
 }

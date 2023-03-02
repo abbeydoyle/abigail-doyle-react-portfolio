@@ -1,12 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
+// dependencies
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CardGroup from "react-bootstrap/CardGroup";
 import "../../app.css";
 import CV from "../../assets/CV.pdf"
 
+// faux css styling
 const styles = {
   cards: {
     background: "transparent",
@@ -21,7 +23,7 @@ const styles = {
   }
 };
 
-// TODO: resume
+// export resume page
 export default function Resume() {
   return (
     <div>
@@ -203,8 +205,6 @@ export default function Resume() {
           </CardGroup>
         </div>
       </div>
-
-
     </div>
   );
 }

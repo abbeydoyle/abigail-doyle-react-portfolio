@@ -1,8 +1,9 @@
+// dependencies
 import React from "react";
 import PortfolioCard from "./PortfolioCard";
 import CardGroup from "react-bootstrap/CardGroup";
 
-// TODO: add real images
+// portfolio images
 import card1Image from "../assets/plant.png";
 import card2Image from "../assets/drivein.png";
 import card3Image from "../assets/team.png";
@@ -10,6 +11,7 @@ import card4Image from "../assets/markdown.png";
 import card5Image from "../assets/employee.png";
 import card6Image from "../assets/portfolio.png";
 
+// projects with ids to populate cards
 const PortfolioInfo = [
       {
             id: 1,
@@ -61,6 +63,7 @@ const PortfolioInfo = [
       }
 ];
 
+// populate cards
 function PortfolioCardGroup() {
       return (
             <CardGroup>
