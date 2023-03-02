@@ -11,14 +11,24 @@ import { validateEmail } from '../../utils/helpers';
 
 const styles = {
   formbox: {
-    background: "transparent",
+    background: "rgba(0, 0, 0, 0.2)",
     borderRadius: "0.5rem",
     border: "2px solid rgb(84, 81, 63)",
     boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
     marginLeft: "5rem",
     marginRight: "5rem",
-    marginBottom: "10rem",
-    padding: '2rem'
+    marginBottom: "8rem",
+    padding: '2rem',
+  },
+  forminputone: {
+    background: "rgb(198, 211, 182)"
+  },
+  forminputtwo: {
+    background: "rgb(183,194,166)"
+  },
+  forminputbig: {
+    background: "rgb(168, 177, 150)",
+    height: "100px"
   }
 }
 
@@ -81,7 +91,7 @@ export default function Contact() {
 
   return (
     <div>
-    <h3 className="mb-2">Please reach out to me via the form below:</h3>
+    <h3 className="mb-5">Please reach out to me via the form below:</h3>
         {errorMessage && (
               <div>
                 <p className="error-text">{errorMessage}</p>
@@ -99,6 +109,7 @@ export default function Contact() {
                   onChange={handleInputChange}
                   type="text"
                   placeholder="john doe"
+                  style={styles.forminputone}
                 />
               </FloatingLabel>
           </Form.Group>
@@ -111,6 +122,7 @@ export default function Contact() {
                 onChange={handleInputChange}
                 type="email"
                 placeholder="johndoe@email.com"
+                style={styles.forminputtwo}
                 />
               </FloatingLabel>
           </Form.Group>
@@ -119,7 +131,7 @@ export default function Contact() {
           <FloatingLabel controlId="floatingTextarea2" label="Message" className="mb-5">
                 <Form.Control
                   placeholder="Write your message here"
-                  style={{ height: '100px' }}
+                  style={styles.forminputbig}
                   value={message}
                   name="message"
                   onChange={handleInputChange}
