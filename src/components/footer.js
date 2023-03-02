@@ -10,7 +10,7 @@ const styles = {};
 export default function Footer() {
   return (
     <div className="content d-flex justify-content-evenly">
-      <Row xs={1} md={3} lg={3}>
+      <Row xs={3} md={3} lg={3}>
         <Col>
           <a
             href="https://github.com/abbeydoyle"
