@@ -1,34 +1,26 @@
-// import React from "react";
-// import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
-// import FloatingLabel from 'react-bootstrap/FloatingLabel';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
 
-// // TODO: styles
-// // TODO: fix
-
-// export default function Contact() {
-//   return (
-//     <div>This will be a contact</div>
-//   )
-// }
-
-// import React from "react";
-// import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
-// import FloatingLabel from 'react-bootstrap/FloatingLabel';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import useState from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import '../../app.css';
 import React, { useState } from 'react';
 
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../../utils/helpers';
 
-// TODO: styles
-// TODO: fix
+
+const styles = {
+  formbox: {
+    background: "transparent",
+    borderRadius: "0.5rem",
+    border: "2px solid rgb(84, 81, 63)",
+    boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
+    marginLeft: "5rem",
+    marginRight: "5rem",
+    marginBottom: "10rem",
+    padding: '2rem'
+  }
+}
 
 export default function Contact() {
 
@@ -76,7 +68,7 @@ export default function Contact() {
       );
       return;
     }
-    alert(`Thank you ${name} for your message`);
+    alert(`Thank you for your message, ${name}`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
@@ -89,38 +81,58 @@ export default function Contact() {
 
   return (
     <div>
-    <p>Hello</p>
-    <form className="form">
-      <input
-        value={email}
-        name="email"
-        onChange={handleInputChange}
-        type="email"
-        placeholder="johndoe@email.com"
-      />
-      <input
-        value={name}
-        name="name"
-        onChange={handleInputChange}
-        type="text"
-        placeholder="john doe"
-      />
-      <input
-        value={message}
-        name="message"
-        onChange={handleInputChange}
-        type="text"
-        placeholder="Write your message here"
-      />
-      <button type="button" onClick={handleFormSubmit}>Submit</button>
-    </form>
-    {errorMessage && (
-      <div>
-        <p className="error-text">{errorMessage}</p>
+    <h3 className="mb-2">Please reach out to me via the form below:</h3>
+        {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+        )}
+
+        <Form className="form" style={styles.formbox}>
+
+        <Form.Group>
+          <FloatingLabel controlId="floatingTextarea2" label="Name" className="mb-2">
+                <Form.Control
+                  as="textarea"
+                  value={name}
+                  name="name"
+                  onChange={handleInputChange}
+                  type="text"
+                  placeholder="john doe"
+                />
+              </FloatingLabel>
+          </Form.Group>
+
+          <Form.Group>
+          <FloatingLabel controlId="floatingTextarea2" label="Email" className="mb-2">
+                <Form.Control
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                type="email"
+                placeholder="johndoe@email.com"
+                />
+              </FloatingLabel>
+          </Form.Group>
+
+          <Form.Group>
+          <FloatingLabel controlId="floatingTextarea2" label="Message" className="mb-5">
+                <Form.Control
+                  placeholder="Write your message here"
+                  style={{ height: '100px' }}
+                  value={message}
+                  name="message"
+                  onChange={handleInputChange}
+                  type="text"
+                />
+              </FloatingLabel>
+          </Form.Group>
+
+          <Button type="button" onClick={handleFormSubmit} variant="outline-dark">Submit</Button>
+        </Form>
       </div>
-    )}
-  </div>
+
+
+
   )
 }
-
-// export default Contact;
