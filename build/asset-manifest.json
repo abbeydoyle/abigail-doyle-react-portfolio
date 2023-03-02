@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2cab247.css",
-    "main.js": "/static/js/main.b5f15586.js",
+    "main.css": "/static/css/main.ef39c4f5.css",
+    "main.js": "/static/js/main.0631cf31.js",
+    "static/media/plant.png": "/static/media/plant.5b867fc69eba506600e7.png",
+    "static/media/drivein.png": "/static/media/drivein.ebe17b0ef4bb07bb370a.png",
+    "static/media/employee.png": "/static/media/employee.97e909d4a1a0407d1fb9.png",
+    "static/media/markdown.png": "/static/media/markdown.a5a033b883e77a256c9c.png",
+    "static/media/portfolio.png": "/static/media/portfolio.6b3a2fcf6354b05388f8.png",
+    "static/media/logo.png": "/static/media/logo.62d55d6dd0221537f7ba.png",
+    "static/media/team.png": "/static/media/team.3f2c0b3332ba1bb208a7.png",
+    "static/media/CV.pdf": "/static/media/CV.1420716ffeae39b535d2.pdf",
+    "static/media/profileImage.png": "/static/media/profileImage.00f9c7ef85d522ca2f98.png",
+    "static/media/github.png": "/static/media/github.3116ff7a207d3a5989d5.png",
+    "static/media/stackoverflow.png": "/static/media/stackoverflow.2c651a6f68e9bab36b59.png",
+    "static/media/linkedin.png": "/static/media/linkedin.2881c585d9c7ba3173cd.png",
     "index.html": "/index.html",
-    "main.c2cab247.css.map": "/static/css/main.c2cab247.css.map",
-    "main.b5f15586.js.map": "/static/js/main.b5f15586.js.map"
+    "main.ef39c4f5.css.map": "/static/css/main.ef39c4f5.css.map",
+    "main.0631cf31.js.map": "/static/js/main.0631cf31.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2cab247.css",
-    "static/js/main.b5f15586.js"
+    "static/css/main.ef39c4f5.css",
+    "static/js/main.0631cf31.js"
   ]
 }
