@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/abigail-doyle-react-portfolio/static/css/main.ef39c4f5.css",
+    "main.js": "/abigail-doyle-react-portfolio/static/js/main.5a139b6a.js",
+    "static/media/plant.png": "/abigail-doyle-react-portfolio/static/media/plant.5b867fc69eba506600e7.png",
+    "static/media/drivein.png": "/abigail-doyle-react-portfolio/static/media/drivein.ebe17b0ef4bb07bb370a.png",
+    "static/media/employee.png": "/abigail-doyle-react-portfolio/static/media/employee.97e909d4a1a0407d1fb9.png",
+    "static/media/markdown.png": "/abigail-doyle-react-portfolio/static/media/markdown.a5a033b883e77a256c9c.png",
+    "static/media/portfolio.png": "/abigail-doyle-react-portfolio/static/media/portfolio.6b3a2fcf6354b05388f8.png",
+    "static/media/logo.png": "/abigail-doyle-react-portfolio/static/media/logo.62d55d6dd0221537f7ba.png",
+    "static/media/team.png": "/abigail-doyle-react-portfolio/static/media/team.3f2c0b3332ba1bb208a7.png",
+    "static/media/CV.pdf": "/abigail-doyle-react-portfolio/static/media/CV.1420716ffeae39b535d2.pdf",
+    "static/media/profileImage.png": "/abigail-doyle-react-portfolio/static/media/profileImage.00f9c7ef85d522ca2f98.png",
+    "static/media/github.png": "/abigail-doyle-react-portfolio/static/media/github.3116ff7a207d3a5989d5.png",
+    "static/media/stackoverflow.png": "/abigail-doyle-react-portfolio/static/media/stackoverflow.2c651a6f68e9bab36b59.png",
+    "static/media/linkedin.png": "/abigail-doyle-react-portfolio/static/media/linkedin.2881c585d9c7ba3173cd.png",
+    "index.html": "/abigail-doyle-react-portfolio/index.html",
+    "main.ef39c4f5.css.map": "/abigail-doyle-react-portfolio/static/css/main.ef39c4f5.css.map",
+    "main.5a139b6a.js.map": "/abigail-doyle-react-portfolio/static/js/main.5a139b6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef39c4f5.css",
+    "static/js/main.5a139b6a.js"
+  ]
+}
